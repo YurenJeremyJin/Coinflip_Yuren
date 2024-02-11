@@ -28,9 +28,8 @@ contract Coinflip is Ownable{
             if (Guesses[i] != generatedFlips[i]) {
                 return false;
             }
-            return true;
         }
-
+        return true;
     }
 
     // @notice allows the owner of the contract to change the seed to a new one
